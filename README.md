@@ -1,8 +1,8 @@
 ## Guia de Pandas
 
-Este material apresenta os códigos dos meus estudos de **[pandas](https://pandas.pydata.org/)**, a biblioteca de análise de dados do Python, [disponível no GitHub](https://github.com/cmsouzaac/Guia-de-Pandas).
+Este material apresenta os códigos dos meus estudos de **[pandas](https://pandas.pydata.org/)**, a biblioteca de análise de dados do Python, [disponível no GitHub](https://github.com/syspone/Guia-de-Pandas).
 
-**Autor:** [Cristian Matias de Souza](https://www.linkedin.com/in/cristiansouzaac/) - [@cmsouzaac](https://github.com/cmsouzaac)
+**Autor:** [Cristian Matias de Souza](https://www.linkedin.com/in/cristiansouzaac/) - [@syspone](https://github.com/syspone)
 
 ### Materiais do curso
 
