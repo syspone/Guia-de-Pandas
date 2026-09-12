@@ -30,7 +30,7 @@ media_vendas = vendas_mensais.mean()
 print('=== Media de Vendas==')
 print(media_vendas)
 
-# 3 - Indentificando o mes com maior vendas
+# 3 - Indentificando o mes com maior vendasd
 mes_maior_vendas = vendas_mensais.idxmax()
 print('=== Mes com Maior Vendas==')
 print(mes_maior_vendas)
