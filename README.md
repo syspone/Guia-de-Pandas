@@ -1,75 +1,17 @@
-# Pandas: Estudos e Análise de Dados
+## Guia de Pandas
 
-Repositório de estudos de **pandas** com Python: estruturas básicas (`Series`) e leitura/exibição de dados de pedidos a partir de um CSV.
+Este material apresenta os códigos dos meus estudos de **[pandas](https://pandas.pydata.org/)**, a biblioteca de análise de dados do Python, [disponível no GitHub](https://github.com/cmsouzaac/Guia-de-Pandas).
 
-## Autor
+**Autor:** [Cristian Matias de Souza](https://www.linkedin.com/in/cristiansouzaac/) - [@cmsouzaac](https://github.com/cmsouzaac)
 
-| | |
-|---|---|
-| **Nome** | Cristian Matias de Souza |
-| **Cargo/Nível** | Analista de Dados (N3) |
-| **E-mail** | [cmsouzaac@gmail.com](mailto:cmsouzaac@gmail.com) |
-| **GitHub** | [github.com/cmsouzaac](https://github.com/cmsouzaac) |
-| **LinkedIn** | [linkedin.com/in/cristiansouzaac](https://www.linkedin.com/in/cristiansouzaac/) |
+### Materiais do curso
 
-## Estrutura do projeto
+Os exemplos introdutórios com `Series` (criação, índice personalizado, média, `idxmax` e filtros) estão no script [Series.py](Series.py).
 
-```
-Pandas/
-├── Dataset/
-│   └── Pedidos.csv          # base de pedidos (2016–2017)
-├── DataframePedidos.py      # leitura e exibição do Pedidos.csv
-├── Series.py                # exemplos com pandas.Series
-└── README.md
-```
+Utilize o script [DataframePedidos.py](DataframePedidos.py) como *base* para leitura e exibição de um `DataFrame` a partir de um arquivo CSV.
 
-## Scripts
+O arquivo [Pedidos.csv](Dataset/Pedidos.csv) corresponde à *base de dados* usada nos exemplos: 43 pedidos de eletrodomésticos entre jun/2016 e jun/2017.
 
-### `Series.py`
+<br>
 
-Exemplos introdutórios com `pd.Series`:
-
-1. Criação de uma Series a partir de uma lista
-2. Series com índice personalizado (vendas mensais de Jan a Dez)
-3. Cálculo da média de vendas
-4. Mês com maior venda (`idxmax`)
-5. Filtro de meses com vendas acima da média
-
-### `DataframePedidos.py`
-
-Lê `Dataset/Pedidos.csv` com `pd.read_csv` e mostra quantas linhas e quais colunas o arquivo tem, além da tabela completa, sem truncar.
-O caminho do arquivo é montado com `pathlib` a partir da pasta do próprio script, então ele funciona de qualquer diretório onde for executado.
-
-## Dataset: `Pedidos.csv`
-
-43 pedidos de eletrodomésticos entre jun/2016 e jun/2017.
-
-| Coluna | Descrição | Exemplo |
-|---|---|---|
-| `DataPedido` | Data do pedido (`d-Mon-aaaa`) | `7-Jun-2016` |
-| `Regiao` | Região do Brasil | `Nordeste` |
-| `Estado` | Estado | `Pernambuco` |
-| `Vendedor` | Nome do vendedor | `Tobias` |
-| `Item` | Produto | `Geladeira` |
-| `Unidades` | Quantidade vendida | `62` |
-| `PrecoUnidade` | Preço unitário (R$) | `400.99` |
-
-## Requisitos
-
-- Python 3.14
-- pandas 3.0
-
-## Como executar
-
-```bash
-# criar e ativar o ambiente virtual
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-# instalar dependências
-pip install pandas
-
-# executar os scripts
-python Series.py
-python DataframePedidos.py
-```
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
