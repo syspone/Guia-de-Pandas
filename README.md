@@ -6,9 +6,9 @@ Este material apresenta os códigos dos meus estudos de **[pandas](https://panda
 
 ### Materiais do curso
 
-Os exemplos introdutórios com `Series` (criação, índice personalizado, média, `idxmax` e filtros) estão no script [Series.py](Series.py).
+Os exemplos introdutórios com `02_Series.py` (criação, índice personalizado, média, `idxmax` e filtros) estão no script [Series.py](02_Series.py).
 
-Utilize o script [DataframePedidos.py](DataframePedidos.py) como *base* para leitura e exibição de um `DataFrame` a partir de um arquivo CSV.
+Utilize o script [DataframePedidos.py](01_DataframePedidos.py) como *base* para leitura e exibição de um `DataFrame` a partir de um arquivo CSV.
 
 O arquivo [Pedidos.csv](Dataset/Pedidos.csv) corresponde à *base de dados* usada nos exemplos: 43 pedidos de eletrodomésticos entre jun/2016 e jun/2017.
 
