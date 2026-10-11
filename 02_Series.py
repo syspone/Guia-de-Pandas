@@ -8,6 +8,7 @@
 # Dependências..: Python 3.14
 # =============================================================================
 import pandas as pd
+from pip._internal.commands import index
 
 # 1 - Criando estrutura Series
 dados = [10, 20, 30, 40, 50]
@@ -39,6 +40,25 @@ print(mes_maior_vendas)
 vendas_acima_media = vendas_mensais[vendas_mensais > media_vendas]
 print('=== Media de Vendas acima de Maior Vendas==')
 print(vendas_acima_media)
+
+# 5 - Acessando Dados
+print('==== Acessando Dados via Indice ====')
+print(dados[0])
+print(dados[1])
+print(dados[2])
+
+# 6 - Fatiamento (slicing): posicoes 1 ate 2 (o 3 nao entra)
+print('==== Fatiamento dos Dados ====')
+print(dados[1:3])
+
+# 7 - Series com arrays Generalizados
+print('==== Arrays Generalizados ====')
+ex1 = pd.Series([0.25, 0.75, 1.0],
+    index=['a', 'b', 'c'])
+print(ex1)
+print(ex1['a'])
+print(ex1['b'])
+print(ex1['c'])
 
 
 
