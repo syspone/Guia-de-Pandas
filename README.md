@@ -4,13 +4,43 @@ Este material apresenta os códigos dos meus estudos de **[pandas](https://panda
 
 **Autor:** [Cristian Matias de Souza](https://www.linkedin.com/in/cristiansouzaac/) - [@syspone](https://github.com/syspone)
 
-### Materiais do curso
+### Estrutura do projeto
 
-Os exemplos introdutórios com `02_Series.py` (criação, índice personalizado, média, `idxmax` e filtros) estão no script [Series.py](02_Series.py).
+```
+Guia-de-Pandas/
+├── Dataset/              # bases de dados usadas nos exemplos
+│   ├── GazPrice.csv
+│   └── Pedidos.csv
+├── notebooks/            # aulas do curso, uma por notebook
+│   ├── 01_DataframePedidos.ipynb
+│   ├── 02_Series.ipynb
+│   └── 03_ImportandoDataset.ipynb
+├── requirements.txt
+└── README.md
+```
 
-Utilize o script [DataframePedidos.py](01_DataframePedidos.py) como *base* para leitura e exibição de um `DataFrame` a partir de um arquivo CSV.
+### Aulas
 
-O arquivo [Pedidos.csv](Dataset/Pedidos.csv) corresponde à *base de dados* usada nos exemplos: 43 pedidos de eletrodomésticos entre jun/2016 e jun/2017.
+| Notebook | Conteúdo |
+|---|---|
+| [01 · DataFrame de Pedidos](notebooks/01_DataframePedidos.ipynb) | Leitura de um CSV com `read_csv`, caminhos com `pathlib` e exibição de um `DataFrame` |
+| [02 · Series](notebooks/02_Series.ipynb) | Criação, índice personalizado, `mean`, `idxmax`, filtros, `loc`/`iloc` e fatiamento |
+| [03 · Importando um Dataset](notebooks/03_ImportandoDataset.ipynb) | Datas com `parse_dates` e primeira inspeção: `type`, `shape`, `info()` e `head()` |
+
+### Bases de dados
+
+- [Pedidos.csv](Dataset/Pedidos.csv): 43 pedidos de eletrodomésticos entre jun/2016 e jun/2017.
+- [GazPrice.csv](Dataset/GazPrice.csv): preços semanais de combustíveis da ANP por região, estado e produto (103 mil registros, desde 2004).
+
+### Como executar
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Depois, abra os notebooks no PyCharm (selecionando o interpretador `.venv`) ou no VS Code. Para usar no navegador, instale também o JupyterLab (`pip install jupyterlab`) e rode `jupyter lab`.
 
 <br>
 
