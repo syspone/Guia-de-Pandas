@@ -12,9 +12,9 @@ Guia-de-Pandas/
 │   ├── GazPrice.csv
 │   └── Pedidos.csv
 ├── notebooks/            # aulas do curso, uma por notebook
-│   ├── 01_BasicoPandas.ipynb
+│   ├── 01_Basico.ipynb
 │   ├── 02_Series.ipynb
-│   ├── 03_ImportandoDataset.ipynb
+│   ├── 03_DfGazPrice.ipynb
 │   └── 05_DfPedidos.ipynb
 ├── requirements.txt
 └── README.md
@@ -24,9 +24,9 @@ Guia-de-Pandas/
 
 | Notebook | Conteúdo |
 |---|---|
-| [01 · Introdução ao Pandas](notebooks/01_BasicoPandas.ipynb) | Primeira `Series` e seus atributos `values` e `index` |
+| [01 · Introdução ao Pandas](notebooks/01_Basico.ipynb) | Primeira `Series` e seus atributos `values` e `index` |
 | [02 · Series](notebooks/02_Series.ipynb) | Criação, índice personalizado, `mean`, `idxmax`, filtros, `loc`/`iloc` e fatiamento |
-| [03 · Importando um Dataset](notebooks/03_ImportandoDataset.ipynb) | Datas com `parse_dates` e primeira inspeção: `type`, `shape`, `info()` e `head()` |
+| [03 · Importando um Dataset](notebooks/03_DfGazPrice.ipynb) | Datas com `parse_dates` e primeira inspeção: `type`, `shape`, `info()` e `head()` |
 | [05 · DataFrame de Pedidos](notebooks/05_DfPedidos.ipynb) | Leitura de um CSV com `read_csv`, caminhos com `pathlib` e exibição de um `DataFrame` |
 
 ### Bases de dados
